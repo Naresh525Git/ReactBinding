@@ -1,25 +1,24 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+
 
 class App extends Component {
+  constructor()
+  {
+    super();
+    this.superBoss= "naresh"
+
+  }
+  getMyname(){
+    return "naresh"
+  }
   render() {
+      var name = "naresh";
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <h1> Hi {name}</h1>
+      <h2> Hello {this.getMyname()}</h2>
+      <h3>Welcome to Hyderabad {this.superBoss}</h3>
+      <h4> {10+2-3}</h4>
       </div>
     );
   }
